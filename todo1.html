@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-Do App</title>
+        <script src="todo.js">
+
+        </script>
+        <style>
+            #filterStyle
+            {
+             background: #B2DFDB;
+            }
+            #todoapp
+            {
+             text-align: center;
+             background-color: #ECEFF1;
+             font-size: xx-large;
+             color: #607D8B;
+            }
+            #lables
+            {
+             text-align: center;
+             background: #ECEFF1;
+             font-size: x-large; 
+             color: #455A64;
+             }
+             #moke
+             {
+                text-align: center;
+             } 
+             #li
+             {
+             background-color: azure;
+             color: #546E7A;
+             }
+             #li
+             {
+                
+             background-color: azure;
+             color: #37474F;
+            }
+              
+        </style>
+    </head>
+<body id="filterStyle">
+    <div id="moke">
+    <h2 id="todoapp">To - do - App</h2>
+
+    <div id="lables">
+        <label  onclick="filterTodo('Incomplete')">Incomplete  &nbsp &nbsp</label>
+        <label onclick ="filterTodo('complete')">Completed &nbsp &nbsp</label>
+        <label onclick="filterTodo('All')">All &nbsp &nbsp</label>   
+    </div>
+
+    <button onclick="updateFrontend()">mock</button>
+    <input id="todoInput" type="text" placeholder="add todo list"/>
+    <button onclick="addTodo()">Add New ToDo</button>
+    <ul id="todoList">
+        <!-- <li>
+            <input type="checkbox" onchange="onCheckedchange()"/>
+        </li> -->
+      </ul>
+    </div>
+</body>
+</html>
